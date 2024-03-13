@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://eco-api-erj9.onrender.com/";
+const BASE_URL = "http://localhost:5000/api/";
 
 const token =
   "eyJpZCI6IjY1Y2RmMjk4MmYyOGYzMWY0ODdkNjE5ZiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcxMDE0OTkzMiwiZXhwIjoxNzEwNDA5MTMyfQ.iuKPcsES4dYFTKbpUlTWMKgrW6TuHSNob5ldPEV8QMc";

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Product from "./Product";
-import axios from "axios";
+import { publicReq } from "../../ReqMethod";
 
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
@@ -9,11 +9,10 @@ const Products = ({ cat, filters, sort }) => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get(
-          cat
-            ? `http://localhost:5000/api/product?category=${cat}`
-            : "http://localhost:5000/api/product"
+        const res = await publicReq(
+          cat ? `/product/?category=${cat}` : "/product"
         );
+
         setProducts(res.data);
       } catch (err) {
         console.log({ Error: err });
