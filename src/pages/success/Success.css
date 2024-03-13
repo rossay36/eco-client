@@ -1,0 +1,31 @@
+.success {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.success__payment {
+  color: teal;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.success__pay {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: teal;
+}
+
+.payment__icon {
+  color: yellow;
+  font-weight: 900;
+}
+.payment__icon {
+  color: green;
+  font-weight: 900;
+}
